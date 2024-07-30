@@ -8,10 +8,10 @@ require('dotenv').config();
 const logger = require('./middleware/logger')
 app.use(logger)
 
-// disable fingerprint Express js header
-app.disable("x-powered-by");
 const connection = require('./middleware/db_connect');
 
+// disable fingerprint Express js header
+app.disable("x-powered-by");
 // Dashboard
 app.use('/', express.static(path.join(__dirname, 'public')));
 
