@@ -7,6 +7,9 @@ require('dotenv').config();
 // Import Middleware
 const logger = require('./middleware/logger')
 app.use(logger)
+
+// disable fingerprint Express js header
+app.disable("x-powered-by");
 const connection = require('./middleware/db_connect');
 
 // Dashboard
