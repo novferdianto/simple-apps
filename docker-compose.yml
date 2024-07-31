@@ -2,7 +2,7 @@ services:
   apps:
     build:
       context: apps
-      dockerfile: ../
+      dockerfile: ../Dockerfile
     ports:
       - "10000:3000"
     restart: always
