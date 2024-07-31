@@ -1,7 +1,7 @@
 services:
   apps:
     context: apps
-    dockerfile: ../
+    dockerfile: ../Dockerfile
     build: ./apps
     ports:
       - "10000:3000"
