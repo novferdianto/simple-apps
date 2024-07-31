@@ -1,4 +1,4 @@
-apps/.scannerwork
-apps/coverage
-apps/node_modules
-apps/package-lock.json
+.scannerwork
+coverage
+node_modules
+package-lock.json
