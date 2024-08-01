@@ -1,6 +1,6 @@
 FROM node:18.16.0
 WORKDIR /app
 ADD . /app
-RUN npm --prefix apps install
+RUN npm install
 CMD npm start
 EXPOSE 3000
